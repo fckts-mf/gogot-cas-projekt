@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bln4egn8gaqur"]
+
+[ext_resource type="Texture2D" uid="uid://wkryio66a684" path="res://hráč/sprite/ExamplePlayerSprite (1).png" id="1_n82cu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4dqqw"]
+
+[node name="Playground" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_4dqqw")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_n82cu")
+hframes = 21
