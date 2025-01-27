@@ -12,5 +12,6 @@
 shape = SubResource("CircleShape2D_4dqqw")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(245, 138)
 texture = ExtResource("1_n82cu")
 hframes = 21
