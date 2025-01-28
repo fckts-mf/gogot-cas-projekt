@@ -4,4 +4,4 @@
 
 [node name="Playground" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_wi53v")]
+[node name="Player" parent="." instance=ExtResource("1_wi53v")]

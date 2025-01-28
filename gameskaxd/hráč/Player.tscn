@@ -1,15 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://mr4cc32xrpje"]
+[gd_scene load_steps=4 format=3 uid="uid://mr4cc32xrpje"]
 
+[ext_resource type="Script" path="res://hráč/player.gd" id="1_0hwrw"]
 [ext_resource type="Texture2D" uid="uid://wkryio66a684" path="res://hráč/sprite/ExamplePlayerSprite (1).png" id="1_67j2w"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yjd7c"]
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_0hwrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(209, 99)
 shape = SubResource("CircleShape2D_yjd7c")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -23)
+position = Vector2(210, 76)
 texture = ExtResource("1_67j2w")
 hframes = 21
