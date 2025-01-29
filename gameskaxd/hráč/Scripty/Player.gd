@@ -16,8 +16,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	
-	direction.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	direction.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
+	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
 	
 	velocity = direction * move_speed
 	
@@ -46,7 +46,7 @@ func SetDirection() -> bool:
 		return false
 	
 	cardinal_direction = new_direction
-	sprite.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1
+	sprite.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1 
 	return true
 
 func SetState() -> bool:
